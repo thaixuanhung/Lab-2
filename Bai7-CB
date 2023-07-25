@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int x;
+    char c;
+    do{
+    cout<<"Loai phong thue: ";
+	cin>>c;
+    }while(c!='a'&&c!='b'&&c!='c');
+    do{
+    cout<<"\nSo ngay thue: ";
+	cin>>x;
+    }
+	while(x<1);
+    float A=250.000,B=200.000,C=150.000;
+    float A1=0.1,B1=0.08,C1=0.08;
+    float sotien;
+    if(x<=12&&x>=1){
+              sotien = (c=='a') ? (A*x):((c=='b') ? (B * x):(C * x));
+    }
+    else{
+         sotien=(c=='a') ? (A*A1*x):((c=='b') ? (B*B1*x):(C*C1*x));
+    }
+    cout<<"\nSo tien nhan duoc la: "<<sotien;
+ 
+    return 0;
+}
