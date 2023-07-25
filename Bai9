@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main() {
+	int km;
+	float total1,total2,total3;
+	cout << "Nhap so km: ";          
+	cin >> km;
+	total2 = 15.000+13.500 * (km-1);
+	total3 = 15.000 + 13.500 * 4 + 11.000 * (km - 5);
+	total1 = total3 * (90 / 100);
+	if (km == 1)
+		cout << "Ban can tra: 15.000" << endl;
+	else if ((km>=2)&&(km<=5))
+		cout<<"Ban can tra: 15.000+13.500*"<<(km-1)<<" = "<<total2<<endl;
+	else
+	{
+		if (km > 12) {
+			cout << "Ban can tra: 15.000+13.500*4+11.000*" << (km - 5) << " = " << total3 << endl;
+		}
+		else 
+			cout << "So tien ban tra: 15.000+13.500*4+11.000*" << (km - 5) << " = " << total3 << endl;
+
+	}
+	return 0;
+}
