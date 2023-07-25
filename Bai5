@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	int n;
+	cout <<"Nhap n :"; cin >> n;
+	int dem =0;
+	int tong =0;
+	int temp= n;
+	while (temp>0){
+		int x = temp %10;
+		tong +=x;
+		dem++;
+		temp/=10;
+		}
+    cout << "So luong chu so cua " << n << " la: " <<dem<< endl;
+    cout << "Tong cac chu so cua " << n << " la: " <<tong << endl;
+    return 0;
+}
