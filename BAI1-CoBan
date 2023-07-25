@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main(){
+	int hangchuc, hangdv, i;
+	cout<<"Nhap vao so nguyen 2 chu so: ";
+	cin>>i;
+	if(i>9&i<100){
+		hangdv= i%10;
+		hangchuc= i/10;
+		if(hangdv*hangchuc == 2*(hangdv+hangchuc)){
+		
+		cout<<"So "<<i<<" thoa yeu cau de bai";
+	}else{
+		cout<<"So "<<i<<" khong thoa yeu cau de bai";	
+	}
+}
+else{
+	cout<<"Hay nhap lai";
+	return 0;
+}
+	return 0;
+}
